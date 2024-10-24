@@ -105,4 +105,4 @@ if st.button('Start Mixing'):
     else:
         st.error("Please upload both audio files.")
 
-st.write('Need a spotify to mp3 conerter? CLick here: https://spotmate.online/')
+st.write('Need a spotify to mp3 conerter? Convert here: https://spotmate.online/')
