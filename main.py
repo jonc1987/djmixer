@@ -90,6 +90,7 @@ volume2 = st.slider("Volume for Second Track (%)", min_value=0, max_value=200, v
 high_pass = st.slider("High-pass Filter (Hz)", min_value=0, max_value=10000, value=0)
 low_pass = st.slider("Low-pass Filter (Hz)", min_value=0, max_value=10000, value=10000)
 
+
 # Button to start mixing
 if st.button('Start Mixing'):
     if uploaded_file1 and uploaded_file2:
@@ -103,3 +104,5 @@ if st.button('Start Mixing'):
                 st.download_button(label="Download Mixed Audio", data=f, file_name="mixed_track.mp3", mime="audio/mp3")
     else:
         st.error("Please upload both audio files.")
+
+st.write('Need a spotify to mp3 conerter? CLick here: https://spotmate.online/')
